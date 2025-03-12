@@ -23,11 +23,11 @@
 // TO-DO: Tune your controller gains and haptics parameters below. We suggest starting only with the follower
 
 // basic PD controller parameters
-#define Kp_lead 0       // proportional gain, leader [PWM% / mm error]
+#define Kp_lead .0025       // proportional gain, leader [PWM% / mm error]
 #define Kd_lead 0       // derivative gain, leader [PWM% / mm/s error]
-#define Kp_follow 0     // proportional gain, follower [PWM% / mm error]
-#define Kd_follow 0     // derivative gain, follower [PWM% / mm/s error]
-#define Kpsv_lead 0     // passivity/damping constant, leader
+#define Kp_follow 0.01     // proportional gain, follower [PWM% / mm error]
+#define Kd_follow 0.0001    // derivative gain, follower [PWM% / mm/s error]
+#define Kpsv_lead 0    // passivity/damping constant, leader
 #define Kpsv_follow 0   // passivity/damping constant, follower
 
 // haptics deadband
@@ -38,7 +38,7 @@
 
 // latency effects
 #define LATENCY_FLAG 0      // 0 = no latency effects, 1 = with latency effects
-#define DELAY_MS 1000       // chosen latency [ms]
+#define DELAY_MS 500       // chosen latency [ms]
 // --------End of your code---------
 
 
